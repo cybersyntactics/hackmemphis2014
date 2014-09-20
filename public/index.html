@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <title>HackMemphis Project</title>
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body ng-app="hackMeter">
+
+<div class="app-wrap" ng-controller="MainController as main">
+<h1>Hello!</h1>
+    <input ng-model="main.servoAngle" type="text">
+    <button ng-click="setAngle(main.servoAngle)">Set Angle</button>
+    <p ng-click="main.servoAngle"></p>
+</div> <!-- .app-wrap -->
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="components/jquery/dist/jquery.min.js"></script>
+<script src="components/angular/angular.min.js"></script>
+<script src="js/lib/ngsocket.min.js"></script>
+
+<script src="js/ngapp.js"></script>
+
+</body>
+</html>
