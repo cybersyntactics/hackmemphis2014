@@ -50,10 +50,6 @@ io.on('connect',function(socket){
 				return (new Date(datum.created_at)).getTime() > Date.now() - 7200000; /* 2 hours in milliseconds*/
         	});
         },5000); // rate limit 180 request per 15 minutes
-
-        decayTimer = setInterval(function() {
-        	if(cylonPi.getAngle() > 36) cylonPi.setAngle(cylonPi.getAngle()-5);
-        },5000)
     });
 
     socket.on('clearHashtag', function(hashtag) {

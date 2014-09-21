@@ -1,4 +1,4 @@
-var cylonPi = require('./server/cylonpi.js');
+var cylonPi = require('./cylonpi.js');
 
 function Watcher(serviceProvider) {
 
