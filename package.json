@@ -1,6 +1,6 @@
 {
   "name": "hackmemphis-servopi",
-  "version": "0.0.0",
+  "version": "0.0.0-2",
   "description": "Meter the things!",
   "main": "app.js",
   "author": "Eric Terpstra",
@@ -9,6 +9,17 @@
     "cylon": "^0.18.0",
     "errorhandler": "^1.2.0",
     "express": "^4.9.4",
-    "socket.io": "^1.1.0"
+    "socket.io": "^1.1.0",
+    "cylon-i2c": "~0.15.0",
+    "cylon-gpio": "~0.18.0",
+    "cylon-firmata": "~0.15.0",
+    "oauth": "~0.9.12"
+  },
+  "subdomain": "testFFapi",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "0.10.x"
   }
 }
