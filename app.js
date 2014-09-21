@@ -11,11 +11,11 @@ var cW = require("./server/cylonWatcher.js");
 
 var serviceProvider = new sP('https://api.twitter.com/oauth/request_token', // requrest_token_url
 							 'https://api.twitter.com/oauth/access_token', // access_token_url
-							 'XDn4QSbqwLslBi4kw097Y5D1m', // application consumer key
-							 'LEMGAkvYp1e7KlXHMLzn6T2x92TdzJjP3AhYnhiP6pvdb5vKjC', // application consume secret
+							 '', // application consumer key
+							 '', // application consume secret
 							 'https://api.twitter.com/1.1/search/tweets.json?src=typd&q=%23hackmemphis&result_type=recent&count=100', // api request url
-							 '2822657568-dKaJjfGGhoJmO5xI7IcDjJb4ihdzzTUGot6nrBe', // user token
-							 '8Sry65vJhPpSDDgBd4FGotXWO8UBP8Ee2yblx2dNoDbZE'); // user secret
+							 '', // user token
+							 ''); // user secret
 
 
 var watcher = new cW(serviceProvider);
