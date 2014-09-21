@@ -9,10 +9,9 @@
 
 <div class="app-wrap" ng-controller="MainController as main">
 <h1>Hello!</h1>
-    <input ng-model="main.hashtag" type="text">
-    <button ng-click="monitorHashtag(main.hashtag)">Watch Hashtag</button>
-    <p ng-click="main.hashtag"></p>
-    <button ng-click="clearHashtag(main.hashtag)">Stop</button>
+    <input ng-model="main.servoAngle" type="text">
+    <button ng-click="setAngle(main.servoAngle)">Set Angle</button>
+    <p ng-click="main.servoAngle"></p>
 </div> <!-- .app-wrap -->
 
 <script src="/socket.io/socket.io.js"></script>

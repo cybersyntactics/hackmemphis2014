@@ -13,16 +13,8 @@ CylonPi.prototype.initRobot = function() {
     Cylon.robot({
         name: 'piservo',
 
-        connection: {
-            name: 'arduino',
-            adaptor: 'firmata',
-            port: 'COM3'
-        },
-
-        devices: [
-            { name: 'led', driver: 'led', pin: 13 },
-            { name: 'servo', driver: 'servo', pin: 9 }
-        ],
+        connection: { name: 'raspi', adaptor: 'raspi', port: '/dev/ttyACM0' },
+        device: { name: 'servo', driver: 'servo', pin: 7 },
 
         work: function(my) {
             self.myAngle = 0;
@@ -43,9 +35,5 @@ CylonPi.prototype.setAngle = function(angle) {
 
     return this.myAngle;
 };
-
-CylonPi.prototype.getAngle = function() {
-    return this.servo.currentAngle();
-}
 
 module.exports = exports = new CylonPi();
